@@ -33,7 +33,7 @@ public class InviterAmi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.inviter_ami);
-		//sender = new GMailSender("le.docteur.du.coeur@gmail.com", "docteure");
+
         sender = new GMailSender("mail application", "mot de passe");
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.
@@ -55,10 +55,8 @@ public class InviterAmi extends AppCompatActivity {
                 else {
                     try { 
 						//client
-                        //sender.sendMail("Invitation", "Vous avez envoyé une invitation pour l'aplication Atome Haffeli à " + temail + "" , "le.docteur.du.coeur@gmail.com", MainActivity.userlogin);
-                        sender.sendMail("Invitation", "Vous avez envoyé une invitation pour l'aplication Atome Haffeli à " + temail + "" , "mail application", MainActivity.userlogin);
+                       sender.sendMail("Invitation", "Vous avez envoyé une invitation pour l'aplication Atome Haffeli à " + temail + "" , "mail application", MainActivity.userlogin);
                         if (!MainActivity.userlogin.equals("")) { //invité
-                            //sender.sendMail("Invitation","Vous avez reçu une invitation à l'aplication Atome Haffeli de la part de " + MainActivity.userlogin , "le.docteur.du.coeur@gmail.com",temail + "" );
                             sender.sendMail("Invitation","Vous avez reçu une invitation à l'aplication Atome Haffeli de la part de " + MainActivity.userlogin , "mail application",temail + "" );
                         }
                         Toast.makeText(InviterAmi.this, "Invitation envoyée!", Toast.LENGTH_LONG).show();

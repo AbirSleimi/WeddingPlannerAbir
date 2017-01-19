@@ -46,7 +46,7 @@ public class EnvoyerMail extends AppCompatActivity implements NavigationView.OnN
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         sender = new GMailSender("mail application", "mot de passe");
-        //sender = new GMailSender("le.docteur.du.coeur@gmail.com", "docteure");
+
 
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.
                 Builder().permitAll().build();
@@ -68,11 +68,11 @@ public class EnvoyerMail extends AppCompatActivity implements NavigationView.OnN
                 } else {
 
                     try { //Admin
-                        //sender.sendMail("e-mail envoyé par " + username, temail + "", "le.docteur.du.coeur@gmail.com", "sleimi.abir3@gmail.com");
+
                         sender.sendMail("e-mail envoyé par " + username, temail + "", "mail application", "mail admin");
                         //Toast.makeText(getApplicationContext(), "email envoyé !", Toast.LENGTH_LONG).show();
                         if (!MainActivity.userlogin.equals("")) { //client
-                            //sender.sendMail("e-mail envoyé à un admin", temail + "", "le.docteur.du.coeur@gmail.com", MainActivity.userlogin);
+
                             sender.sendMail("e-mail envoyé à un admin", temail + "", "mail application", MainActivity.userlogin);
                         }
                         Toast.makeText(EnvoyerMail.this, "E-mail envoyé!", Toast.LENGTH_LONG).show();
