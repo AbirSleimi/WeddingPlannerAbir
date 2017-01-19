@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".Info">
+
+    <ScrollView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/user_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:gravity="center_vertical|clip_horizontal"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+<!--android:text="Information sur AtomHaffeli" -->
+    <TextView
+        android:text="Anniversaire/soirée privée"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView0"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+    <TextView
+        android:text="Il y a toujours une bonne raison de faire la fête ! Un anniversaire, un enterrement de vie de jeune fille, une crémaillère, une demande en mariage, une soirée à domicile…
+AtomHaffeli est là pour vous proposer la soirée qui saura éblouir vos invités !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+    <TextView
+        android:text="              Mariage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="center" />
+    <TextView
+        android:text="Votre nouvel objectif « organisation du plus beau jour de votre vie » mais vous êtes un peu perdu, confiez nous l’organisation de votre mariage, cérémonie laïque, PACS, Renouvèlement de vœux …
+Nous saurons sublimer vos désirs les plus fous !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+
+    <TextView
+        android:text="Enfance/Baby shower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"/>
+    <TextView
+        android:text="Il n’y a rien de plus beau que le sourire de votre enfant qui vous remercie de lui avoir organisé l’anniversaire de ses rêves !
+AtomHaffeli vous accompagne dans la création de ses plus beaux souvenirs."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+    <TextView
+        android:text=" Contactez nous sur: +216 28127912"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"/>
+</LinearLayout>
+</ScrollView>
+</LinearLayout>

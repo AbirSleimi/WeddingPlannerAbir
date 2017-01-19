@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_action_profile"
+            android:title="Profil" />
+        <item
+            android:id="@+id/nav_invit"
+            android:icon="@drawable/ic_action_invit"
+            android:title="Inviter ami" />
+    </group>
+
+    <item android:title="Communication">
+        <menu>
+            <item
+                android:id="@+id/chat"
+                android:icon="@android:drawable/sym_action_chat"
+                android:title="Chat" />
+
+            <item
+                android:id="@+id/help"
+                android:icon="@drawable/ic_action_help"
+                android:title="Help" />
+
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_action_mail"
+                android:title="Envoyer un E-mail" />
+        </menu>
+    </item>
+
+    <item android:title="Gestion évenement">
+        <menu>
+            <item
+                android:id="@+id/offre_event"
+                android:title="Nos offres"
+                android:icon="@drawable/ic_action_offre"/>
+            <item
+                android:id="@+id/creation_event"
+                android:title="Création d'un  évenement"
+                android:icon="@drawable/ic_action_new"/><!--ic_menu_add-->
+            <!--android:icon="@drawable/profil"-->
+
+            <item
+                android:id="@+id/listing_event"
+                android:title="Liste évenements"
+                android:icon="@drawable/ic_action_list" />
+            <!-- android:icon="@drawable/logo-liste"-->
+            <!--
+            <item
+                android:id="@+id/creation_test"
+                android:title="Création Test"
+                android:icon="@drawable/ic_action_new"/> -->
+
+        </menu>
+    </item>
+
+
+</menu>

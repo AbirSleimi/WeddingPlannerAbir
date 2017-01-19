@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/params"
+        android:orderInCategory="100"
+        android:title="Sécurité"
+        android:color="@color/cardview_light_background"
+        android:icon="@android:drawable/ic_secure"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Déconnecter"
+        app:showAsAction="never" />
+
+</menu>

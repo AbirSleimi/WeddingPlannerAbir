@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sleimi.abir.weddingplanner">
+
+
+    <!-- Internet Permission -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name=".LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NewAccountActivity" />
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".Costumes" />
+        <activity android:name=".Robes" />
+        <activity android:name=".AfficherPhotoCos" />
+        <activity android:name=".AfficherPhotoRobe" />
+        <activity android:name=".CoiffureH" />
+        <activity android:name=".CoiffureF" />
+        <activity android:name=".AfficherPhotoCoifF" />
+        <activity android:name=".AfficherPhotoCoifH" />
+        <activity android:name=".SplashScreenRobe" />
+        <activity android:name=".SplashScreenCostumes" />
+        <activity android:name=".SplashScreenCoiff" />
+        <activity android:name=".Jus" />
+        <activity android:name=".AfficherPhotoJus" />
+        <activity android:name=".SplashScreenVoy" />
+        <activity android:name=".Voyage" />
+        <activity android:name=".AfficherPhotoVoyage" />
+        <activity android:name=".Chat" />
+        <activity android:name=".ModifierProfil" />
+        <activity android:name=".EnvoyerMail" />
+        <activity android:name=".InviterAmi" />
+        <activity android:name=".ModifierMail" />
+        <activity android:name=".ModifierPassword" />
+        <activity android:name=".Info"></activity>
+    </application>
+
+</manifest>
